@@ -8,27 +8,49 @@
     <link rel="icon" href="../Assets/Quizicon.jpg" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <head>
+    <nav>
         <h1>Welcome to the Ultimate Trivia Challenge!</h1>
-    </head>
+    </nav>
 
     <main>
         <div class="container">
-            <form method="post">
-                <input type="number" min="1" max="5">
-                <select name="" id="">
-                    
+            <form id="userInputForm" method="get">
+                <label for="noOfQue">Select Number Of Questions:</label>
+                <input name="noOfQue" id="noOfQue" type="number" min="1" max="10" value="1" required>
+
+                <label for="category">Select Category:</label>
+                <select name="category" id="category" required>
+                    <option value="any" selected>Any Category</option>
+                    <option value="31">Entertainment: Japanese Anime & Manga</option>
                 </select>
+
+                <label for="difficulty">Select Difficulty:</label>
+                <select name="difficulty" id="difficulty" required>
+                    <option value="any" selected>Any Difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+                <label for="trivia_type">Select Type:</label>
+                <select name="trivia_type" id="trivia_type" required>
+                    <option value="any" selected>Any Type</option>
+                    <option value="multiple">Multiple Choice</option>
+                    <option value="boolean">True / False</option>
+                </select>
+
+                <div class="submit-button">
+                    <button type="submit">Get Started!</button>
+                </div>
             </form>
         </div>
     </main>
+    <script src="app.js"></script>
 </body>
 
 </html>

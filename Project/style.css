@@ -1,27 +1,102 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #7E78D2;
 }
 
-body h1{
+nav{
+    background-color:rgb(31, 5, 55);
+    padding: 10px;
+    transition: padding 0.5s ease;
+}
+
+nav:hover{
+    padding: 13px;
+}
+body h1 {
     font-size: 1.7rem;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    color: #0D1321;
+    color: #ffffff;
+    font-weight: 1000;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main .container{
+
+main .container {
+    margin-top: 20px;
     background-color: #8AE1FC;
-    height: 80vh;
-    width: 25rem;
+    height: auto;
+    width: 18rem;
     border: 1px solid black;
+    padding: 15px;
+    border-radius: 8px; 
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
 }
+
+form {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin: auto;
+}
+
+label {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-family: "Poppins", sans-serif; 
+}
+
+input,
+select,
+button {
+    font-family: "Poppins", sans-serif;
+    color: #0D1321;
+    padding: 4px 2px;
+    font-size: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: padding 0.3s ease;
+    margin-bottom: 2px;
+}
+
+input:hover,
+select:hover,
+button:hover{
+    padding: 4px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+}
+option{
+    font-family: "Poppins", sans-serif;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 0px 0px;
+}
+button {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, padding 0.3s ease;
+}
+
+button:hover {
+    padding: 5px 10px;
+    background-color: #fcfcfc;
+}
+
